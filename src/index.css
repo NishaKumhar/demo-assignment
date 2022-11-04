@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+p{
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.bg-grey{
+  background-color: rgb(241, 241, 241);
+}
+.icon-view{
+  background-color: rgb(27, 27, 58);
+  width: 250px;
+  padding: 30px 10px;
+}
+.main-view{
+  padding: 20px;
+}
+.icon-area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;  
+}
+/* .w-32 {
+  width: 100%;
+} */
+.menu-content{
+  display: flex;
+}
+
+.menu-content h3{
+  color: rgb(130, 121, 121);
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+.maincontent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  /* border: 2px solid black; */
+  border-top-left-radius:20px ;
+}
+.maincontent img{
+  padding-top: 10px;
+}
+.revenue img{
+  margin-right: 13px;
+}
+.menu-view{
+  margin-top: 50px;
+}
+.menu-content img{
+  margin-top: 24px;
+}
+.application-content{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.application-content h3{
+  color: rgb(130, 121, 121);
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+.top h6{
+  font-size: 11px;
+  color: rgb(130, 121, 121);
+}
+.top h4{
+  font-size: 20px;
+  color: rgb(22, 13, 13);
+}
+
+.application-content img{
+  margin-top: 5px;
+}
+ 
+.sidebar:not(.sidebar-end) {
+  margin-left: 0px;
+  width: 250px;
+}
+.header-section{
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+  /* padding: 20px 0px; */
+}
+h5{
+  color: rgb(174, 174, 174);
+}
+.bg-blue{
+  background-color: rgb(194, 194, 255);
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  border-radius: 50%;
+}
+ .last h6{
+  font-size: 11px;
+  padding: 5px;
+  text-align: center;
+  margin-right: 10px;
+}
+.bg-darkblue{
+  background-color:rgb(20, 158, 212);
+}
+.bottom h5{
+  font-size: 15px;
+}
+.bottom p{
+line-height: 0%;
+}
+
+.last p{
+  font-size: 11px;
+  margin-left: 5px;
+}
+.logo-icon{
+  margin-right: 35px;
+}
+.card h4{
+  color: rgb(26, 14, 14);
+  font-weight: 600;
+}
+
+.card h6{
+  color: rgb(144, 142, 142);
+}
+p{
+  color: rgb(174, 174, 174);
+  font-size: 1rem;
+}
+.profileImg{
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
