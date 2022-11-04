@@ -40,6 +40,16 @@ p{
 .menu-content{
   display: flex;
 }
+.rate{
+   text-align: end;
+}
+.sidesection{
+  height: 100%;
+}
+.middle h5{
+  font-size: 18px;
+
+}
 
 .menu-content h3{
   color: rgb(130, 121, 121);

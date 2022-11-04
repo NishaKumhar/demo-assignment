@@ -1,9 +1,9 @@
 import React from 'react';
 import { CAvatar } from '@coreui/react';
 import BarChart from './chart/BarChart';
-import { cilList, cilShieldAlt, } from '@coreui/icons';
 import LineChart from './chart/LineChart';
 import CircularPieChart from './chart/CircularPieChart';
+import Circularchart from './Circularchart';
 
 
 
@@ -57,7 +57,7 @@ const Content = () => {
                             </div>
                         </div>
                         {/* middle section  */}
-                        <div className=' card rounded-4 mt-3'>
+                        <div className=' middle  card rounded-4 mt-3'>
                             <div className='card-body gap-3'>
                                 <div className='d-flex justify-content-between'>
                                     <h6>Overview</h6>
@@ -66,15 +66,95 @@ const Content = () => {
                                 <div className='row'>
                                     <div className=' d-flex justify-content-between col-lg-3'>
                                         <div>
-                                            <h4>$24,568</h4>
                                             <h6><span>This month</span></h6>
+                                            <h4>$24,568</h4>
                                         </div>
                                         <div>
                                             <h6>40k</h6>
                                         </div>
                                     </div>
-                                    <div className='col-lg-9'>
-                                        <BarChart />
+
+                                    <div className='row'>
+                                        <div className='col-lg-3 d-flex justify-content-between p-3'>
+                                            <div>
+                                                <div>
+                                                    <h6>Orders</h6>
+                                                    <h5>5643</h5>
+                                                </div>
+                                                <div>
+                                                    <h6>Order Value</h6>
+                                                    <h5>12.03%</h5>
+                                                </div>
+                                                <div>
+                                                    <h6>Income</h6>
+                                                    <h5>$35,652</h5>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <h6>Sales</h6>
+                                                    <h5>16,273</h5>
+                                                </div>
+                                                <div>
+                                                    <h6>Customers</h6>
+                                                    <h5>21,456</h5>
+                                                </div>
+                                                <div>
+                                                    <h6>Expenses</h6>
+                                                    <h5>$12,248</h5>
+                                                </div>
+                                            </div>
+                                            {/* <div className='d-flex justify-content-between '>
+                                                <div>
+                                                    <h6>Orders</h6>
+                                                    <h5 className='fs-6'>5,643</h5>
+                                                </div>
+                                                <div className='d-flex justify-content-between'>
+                                                    <div>
+                                                        <h6>Sales</h6>
+                                                        <h5 className='fs-6'>16,273</h5>
+                                                    </div>
+                                                    <div className='rate'>
+                                                        <h6>30k</h6>
+                                                    </div>
+                                                </div>
+                                            </div> */}
+                                            {/* <div className='d-flex justify-content-between '>
+                                                <div>
+                                                    <h6>Order Value</h6>
+                                                    <h5 className='fs-6'>5,643</h5>
+                                                </div>
+                                                <div className='d-flex justify-content-between'>
+                                                    <div>
+                                                        <h6>Customers</h6>
+                                                        <h5 className='fs-6'>16,273</h5>
+                                                    </div>
+                                                    <div className='rate'>
+                                                        <h6>20k</h6>
+                                                    </div>
+                                                </div>
+                                            </div> */}
+                                            {/* <div className='d-flex justify-content-between '>
+                                                <div>
+                                                    <h6>Income</h6>
+                                                    <h5 className='fs-6'>5,643</h5>
+                                                </div>
+                                                <div className='d-flex justify-content-between'>
+                                                    <div>
+                                                        <h6>Expenses</h6>
+                                                        <h5 className='fs-6'>16,273</h5>
+                                                    </div>
+                                                    <div className='rate'>
+                                                        <h6>10k</h6>
+                                                    </div>
+                                                </div>
+                                            </div> */}
+
+
+                                        </div>
+                                        <div className='col-lg-9'>
+                                            <BarChart />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -157,6 +237,76 @@ const Content = () => {
                                             <h6 className='border-2 bg-blue text-dark'>2.84k </h6>
                                         </div>
                                     </div>
+                                    <div className=' last mt-4 d-flex justify-content-between align-items-center'>
+                                        <div className='d-flex align-items-center'>
+                                            <div>
+                                                <h6 className='border-2 bg-darkblue text-light p-1.5 rounded-3'>#1 </h6>
+                                            </div>
+                                            <div>
+                                                <p>Polo blue T-shirt</p>
+                                                <p className='text-dark fw-bold'>$25.4</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 className='border-2 bg-blue text-dark'>3.82k </h6>
+                                        </div>
+                                    </div>
+                                    <div className=' last mt-4 d-flex justify-content-between align-items-center'>
+                                        <div className='d-flex align-items-center'>
+                                            <div>
+                                                <h6 className='border-2 bg-darkblue text-light p-1.5 rounded-3'>#1 </h6>
+                                            </div>
+                                            <div>
+                                                <p>Polo blue T-shirt</p>
+                                                <p className='text-dark fw-bold'>$25.4</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 className='border-2 bg-blue text-dark'>3.82k </h6>
+                                        </div>
+                                    </div>
+                                    <div className=' last mt-4 d-flex justify-content-between align-items-center'>
+                                        <div className='d-flex align-items-center'>
+                                            <div>
+                                                <h6 className='border-2 bg-darkblue text-light p-1.5 rounded-3'>#1 </h6>
+                                            </div>
+                                            <div>
+                                                <p>Polo blue T-shirt</p>
+                                                <p className='text-dark fw-bold'>$25.4</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 className='border-2 bg-blue text-dark'>3.82k </h6>
+                                        </div>
+                                    </div>
+                                    <div className=' last mt-4 d-flex justify-content-between align-items-center'>
+                                        <div className='d-flex align-items-center'>
+                                            <div>
+                                                <h6 className='border-2 bg-darkblue text-light p-1.5 rounded-3'>#1 </h6>
+                                            </div>
+                                            <div>
+                                                <p>Polo blue T-shirt</p>
+                                                <p className='text-dark fw-bold'>$25.4</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 className='border-2 bg-blue text-dark'>3.82k </h6>
+                                        </div>
+                                    </div>
+                                    <div className=' last mt-4 d-flex justify-content-between align-items-center'>
+                                        <div className='d-flex align-items-center'>
+                                            <div>
+                                                <h6 className='border-2 bg-darkblue text-light p-1.5 rounded-3'>#1 </h6>
+                                            </div>
+                                            <div>
+                                                <p>Polo blue T-shirt</p>
+                                                <p className='text-dark fw-bold'>$25.4</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 className='border-2 bg-blue text-dark'>3.82k </h6>
+                                        </div>
+                                    </div>
 
 
 
@@ -180,6 +330,7 @@ const Content = () => {
                                     <h5 className='mt-4'>Jennifer bennett</h5>
                                     <span>product designer</span>
                                 </div>
+                                <Circularchart/>
                                 <div className='d-flex justify-content-between m-5'>
                                     <div>
                                         <h5 className='fs-6'>1269</h5>
@@ -233,6 +384,7 @@ const Content = () => {
                                         <p>Joined the group"Boardsmanship Forum"</p>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>

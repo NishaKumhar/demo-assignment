@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+// import React, { Fragment, useState } from 'react';
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 
@@ -19,7 +19,7 @@ const BarChart = () => {
             enabled: false
         },
         title: {
-            text: 'Live births in Norway'
+            text: ''
         },
         xAxis: {
             type: 'category'
@@ -27,7 +27,7 @@ const BarChart = () => {
         yAxis: {
             allowDecimals: false,
             title: {
-                text: 'Amount'
+                text: ''
             }
         },
         tooltip: {
@@ -37,13 +37,13 @@ const BarChart = () => {
             }
         },
         series: [{
-            name: 'John',
+            name: '',
             data: [5, 3, 4, 7, 2]
         }, {
-            name: 'Jane',
+            name: '',
             data: [2, 2, 3, 2, 1]
         }, {
-            name: 'Joe',
+            name: '',
             data: [3, 4, 4, 2, 5]
         }]
 

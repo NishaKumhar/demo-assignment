@@ -9,7 +9,7 @@ import { cilSpeedometer, cilList } from '@coreui/icons';
 const Sidebar = () => {
     return (
         <>
-            <CSidebar>
+            <CSidebar className='sidesection'>
                 <div className='d-flex align-items-center justify-content-between p-3 '>
                     <div>
                         <h6>dashboard</h6>
@@ -21,8 +21,6 @@ const Sidebar = () => {
 
                 <CSidebarNav>
                     <CNavTitle>MENU</CNavTitle>
-                    
-                    <CIcon customClassName="nav-icon" icon={cilSpeedometer} />
                     <CNavGroup  toggler="Dashboards">
                         <CNavItem href="#">
                             <CIcon customClassName="nav-icon" /> Ecommerce
