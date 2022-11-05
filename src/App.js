@@ -11,6 +11,7 @@ function App() {
       <div className='row'>
         <div className=' col-lg-2 col-md-4 col-sm-6 col-12'>
           <Sidebar />
+          
         </div>
         <div className='col-lg-10 col-md-4 col-sm-6 col-12'>
           <Content/>
